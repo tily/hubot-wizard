@@ -1,0 +1,22 @@
+{
+  "name": "hubot-wizard",
+  "version": "0.0.0",
+  "description": "data-driven multi-step conversation for hubot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tily/hubot-wizard.git"
+  },
+  "keywords": [
+    "hubot"
+  ],
+  "author": "tily",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tily/hubot-wizard/issues"
+  },
+  "homepage": "https://github.com/tily/hubot-wizard#readme"
+}
