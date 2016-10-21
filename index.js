@@ -23,7 +23,6 @@ module.exports = class Wizard {
   startCallback() {
     return (message)=> {
       if(this.state.started) return
-      message.reply(this.startText)
       this.state = {started: true, confirming: false, questionIndex: 0, result: {}}
     }
   }
@@ -92,6 +91,9 @@ module.exports = class Wizard {
       if(question.default) {
         text += ` (default=${question.default})`
       }
+    }
+    if(this.state.questionIndex == 0) {
+      text = this.startText + "\n" + text
     }
     message.reply(text)
 
