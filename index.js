@@ -112,7 +112,7 @@ module.exports = class Wizard {
       this.callback(message, this.state.result)
       this.state = {started: false}
     } else if(message.match[1] == "n") {
-      this.cancel()
+      this.cancel(message)
     } else {
       message.reply(this.confirmErrorText)
     }
