@@ -1,16 +1,16 @@
 module.exports = class Wizard {
   constructor(options) {
     this.robot = options.robot
-    this.startText = options.config.startText
-    this.confirmText = options.config.confirmText
-    this.confirmListMark = options.config.confirmListMark
-    this.confirmListSeparator = options.config.confirmListSeparator
-    this.confirmErrorText = options.config.confirmErrorText
-    this.cancelText = options.config.cancelText
+    this.startText = options.config.startText || "Welcome to the wizard!"
+    this.confirmText = options.config.confirmText || "Are you sure? (y/n)"
+    this.confirmListMark = options.config.confirmListMark || "* "
+    this.confirmListSeparator = options.config.confirmListSeparator || ": "
+    this.confirmErrorText = options.config.confirmErrorText || "Please answer with 'y' or 'n'."
+    this.cancelText = options.config.cancelText || "Okay! Tell me if I can help."
     this.questions = options.config.questions
-    this.cancelCommand = options.config.cancelCommand
-    this.rewindCommand = options.config.rewindCommand
-    this.forwardCommand = options.config.forwardCommand
+    this.cancelCommand = options.config.cancelCommand || "c"
+    this.rewindCommand = options.config.rewindCommand || "r"
+    this.forwardCommand = options.config.forwardCommand || "d"
     this.state = {started: false}
   }
 
