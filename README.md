@@ -17,3 +17,20 @@ module.exports = (robot)->
   wizard.respond /start wizard/, (message, result)=>
     message.reply("You are " + result.sex + ", " + result.age + " years old, and " + result.job + ".")
 ```
+
+```
+tily > @hubot start wizard
+hubot> Welcome to the wizard!
+       Are you male or female? (0:male/1:female [default=0])
+tily > @hubot 0
+hubot> How old are you?
+hubot> @hubot 33
+hubot> What do you do?
+tily > @hubot Software Engineer
+hubot> Are you sure? (y/n)
+       * Sex: male
+       * Age: 33
+       * Job: Software Engineer
+tily > @hubot y
+hubot> You are male, 33 years old, and y.
+```
