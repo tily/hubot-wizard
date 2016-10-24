@@ -1,7 +1,7 @@
 module.exports = class Wizard {
   constructor(options) {
     this.robot = options.robot
-    this.startText = options.config.startText || "Welcome to the wizard! (c = cancel, r = rewind, d = default, p = use previous input)"
+    this.startText = options.config.startText || "Welcome to the wizard! (c = cancel, r = rewind, d = default)"
     this.confirmText = options.config.confirmText || "Are you sure? (y/n)"
     this.confirmListMark = options.config.confirmListMark || "* "
     this.confirmListSeparator = options.config.confirmListSeparator || ": "
