@@ -32,5 +32,5 @@ hubot> Are you sure? (y/n)
        * Age: 33
        * Job: Software Engineer
 tily > @hubot y
-hubot> You are male, 33 years old, and y.
+hubot> You are male, 33 years old, and Software Engineer.
 ```
