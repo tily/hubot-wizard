@@ -20,7 +20,7 @@ module.exports = (robot)->
 
 ```
 tily > @hubot start wizard
-hubot> Welcome to the wizard!
+hubot> Welcome to the wizard! (c = cancel, r = rewind, d = default)
        Are you male or female? (0:male/1:female [default=0])
 tily > @hubot 0
 hubot> How old are you?
